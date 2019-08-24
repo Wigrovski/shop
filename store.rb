@@ -24,6 +24,15 @@ products << Book.new(
   price: '650',
   amount: '50'
 )
+movie = Movie.new(title: 'Терминатор 2', dir: 'Джеймс Кэмерон', price: '1000')
+movie.year = 1991
+movie.update(amount: 10)
+
+
 puts 'Вот такие товары у нас есть: '
 puts
 products.each{|product| puts product}
+puts
+puts "Так же у нас в архиве имеется:"
+puts movie
+puts
